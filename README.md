@@ -44,28 +44,41 @@ A simple RESTful API for managing notes, built with Spring Boot and Gradle. This
 curl -X POST http://localhost:8080/notes \
   -H "Content-Type: application/json" \
   -d '{"title": "Test Note", "body": "This is the content."}'
+```
 
 ### Get All Notes
 ```bash
 curl http://localhost:8080/notes
-'
+```
 
 ### Get Note by ID
 ```bash
 curl -X PUT http://localhost:8080/notes/1 \
   -H "Content-Type: application/json" \
   -d '{"title": "Updated", "body": "Updated content"}'
-'
+```
 
 ### Update Note
 ```bash
 curl -X PUT http://localhost:8080/notes/1 \
   -H "Content-Type: application/json" \
   -d '{"title": "Updated", "body": "Updated content"}'
-'
+```
 
 ### Delete a Note
 ```bash
 curl -X DELETE http://localhost:8080/notes/1
-'
+```
 
+## 📥 Getting Started
+### Prerequisites
+- Java 17+
+- Gradle
+- Git
+
+## Run the Application
+```bash
+./gradlew bootRun
+```
+
+The API will be available at: http://localhost:8080
