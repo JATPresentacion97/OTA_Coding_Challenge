@@ -57,6 +57,3 @@ jacoco.exec
 
 # Package management
 node_modules/
-
-# Postman
-*.postman_collection.json
